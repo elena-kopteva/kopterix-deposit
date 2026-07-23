@@ -1,0 +1,12 @@
+# CAVEAT: UnigramCounts stores only the TOP-200 tokens per snapshot (__total__ key excluded from all entropy computations). H_rare is the rarefied entropy of this TRUNCATED top-200 distribution, not the full lexical distribution. Instrument diagnostic, not a platform-level claim.
+# H_rare vs n_total correlations (Pearson and Spearman). Primary rows use H_rare at budget B=703 (all 214 rows). 'B2 subset' rows use H_rare_B2 at budget B2=5000 (209 rows with >= 5000 top-200 tokens) as a budget-sensitivity check. 'raw H_t' rows reproduce the original (unrepaired) correlation for reference. April n_total is constant at 750 for all 104 April rows -> Pearson/Spearman undefined for April-only.
+scope,budget,n_pairs,pearson_r,pearson_p,spearman_r,spearman_p,note
+April-only,B=703,104,,,,,undefined (n_total constant at 750 for all 104 non-NaN April-only rows)
+May-only,B=703,110,-0.4744946817567223,1.6338531207922092e-07,0.012400117547931216,0.8976956925134328,pearson r=-0.4745 p=1.63e-07; spearman r=0.0124 p=0.898
+Two-month,B=703,214,-0.17679506377522386,0.009553410328909707,0.12413015916967297,0.0699479398836476,pearson r=-0.1768 p=0.00955; spearman r=0.1241 p=0.0699
+"April-only (B2 subset, budget sensitivity)",B2=5000,104,,,,,"undefined (n_total constant at 750 for all 104 non-NaN April-only (B2 subset, budget sensitivity) rows)"
+"May-only (B2 subset, budget sensitivity)",B2=5000,105,0.334650664545043,0.0004843393972956636,0.3163617717693711,0.0010096968403972171,pearson r=0.3347 p=0.000484; spearman r=0.3164 p=0.00101
+"Two-month (B2 subset, budget sensitivity)",B2=5000,209,0.28373192414167214,3.1389661992841045e-05,0.2812925521953997,3.694062900584491e-05,pearson r=0.2837 p=3.14e-05; spearman r=0.2813 p=3.69e-05
+"April-only (raw H_t, reference)",n/a (raw),104,,,,,"undefined (n_total constant at 750 for all 104 non-NaN April-only (raw H_t, reference) rows)"
+"May-only (raw H_t, reference)",n/a (raw),110,0.9353061167547934,1.5268693553559705e-50,0.422687494833286,4.224009256243339e-06,pearson r=0.9353 p=1.53e-50; spearman r=0.4227 p=4.22e-06
+"Two-month (raw H_t, reference)",n/a (raw),214,0.9182418091921641,3.0973944397417673e-87,0.27472385745696243,4.62145111131395e-05,pearson r=0.9182 p=3.1e-87; spearman r=0.2747 p=4.62e-05

@@ -1,0 +1,19 @@
+# PELT changepoints (ruptures, model='rbf', min_size=3, jump=1). Penalty selected by BIC-style sweep over segment count K; sensitivity reported over a 3x penalty range (pen/sqrt3, pen, pen*sqrt3). Run on LINEARLY DETRENDED phi_t and D_t (observed series, NaN dropped, time-ordered). changepoint_utc = timestamp of the last run before each break. near_Dt_outlier_cluster flags coincidence (within 12h) with a robust-z (|z|>3.5, median/MAD) D_t outlier cluster.
+series,changepoint_utc,penalty_BIC,n_cp_at_BIC,n_cp_div_sqrt3,n_cp_pen,n_cp_mul_sqrt3,near_Dt_outlier_cluster
+phi_t_detrended,2026-04-08 07:21:07+00:00,2.0795968369629803,12,22,12,5,2026-04-08 02:28:04+00:00..2026-04-08 07:21:07+00:00(len2)
+phi_t_detrended,2026-04-21 19:13:02+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-04-26 02:43:37+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-02 07:45:04+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-04 02:51:02+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-07 19:44:35+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-11 19:47:20+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-22 03:38:38+00:00,2.0795968369629803,12,22,12,5,2026-05-21 15:26:21+00:00..2026-05-22 19:45:22+00:00(len3)
+phi_t_detrended,2026-05-24 03:35:26+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-26 09:56:58+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-29 03:35:16+00:00,2.0795968369629803,12,22,12,5,
+phi_t_detrended,2026-05-30 08:29:15+00:00,2.0795968369629803,12,22,12,5,
+D_t_detrended,2026-04-10 18:54:53+00:00,1.8498294554434673,5,17,5,3,
+D_t_detrended,2026-04-23 19:09:05+00:00,1.8498294554434673,5,17,5,3,
+D_t_detrended,2026-05-08 02:53:58+00:00,1.8498294554434673,5,17,5,3,
+D_t_detrended,2026-05-26 15:27:49+00:00,1.8498294554434673,5,17,5,3,
+D_t_detrended,2026-05-30 13:29:31+00:00,1.8498294554434673,5,17,5,3,

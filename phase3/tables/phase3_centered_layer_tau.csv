@@ -1,0 +1,26 @@
+# Task 2B: per-layer centroid memory, RAW vs CENTERED (centered = layer centroid
+# minus the grand-mean MeanEmbedding over the 215 in-window valid state rows;
+# grand_mean L2 norm = 0.3191144627010268, same definition as the Phase 2
+# zero-mode analysis). n=210 valid layer rows, dt=median consecutive gap (h).
+# *_lag1_sim = mean cosine similarity at lag 1 over original-adjacent valid pairs
+# (no bridging gaps>12h). static_share_lag1_sim = (raw_lag1_sim -
+# centered_lag1_sim)/raw_lag1_sim. mean_norm_ratio_centered_over_raw = mean over
+# rows of |centered_centroid|/|raw_centroid|.
+# *_tau_exp = NLS fit of sim(k)=A*exp(-k*dt/tau)+C on lags 1-16 (same model as
+# Task 2's per-layer analysis); *_tau_ar1 = AR(1)-style conversion -dt/ln(lag1_sim)
+# (NaN if lag1_sim<=0). TWO SEPARATE CI FAMILIES:
+#   - Exponential-fit CIs (raw_tau_exp_ci95_* and centered_tau_exp_ci95_*): corrected
+#     adjacency-preserving, NON-CIRCULAR moving-block bootstrap, block=24 rows, 5000
+#     resamples, lags 1-16, within-block pairs only (no bridging gaps>12h, no wrap),
+#     layer-specific seeds raw 42/43/44 and centered 52/53/54. Written by
+#     kopterix_phase3_task2_perlayer_ci.py; supersedes the earlier block=8/1000 exp CIs.
+#     The raw_tau_exp CIs match phase3_memory_timescales.csv exactly.
+#   - AR(1) CIs (raw_tau_ar1_ci95_* and centered_tau_ar1_ci95_*): UNCHANGED adjacency-
+#     preserving moving-block bootstrap, block=8 rows, 1000 resamples, lag 1 only, with
+#     the existing per-series seeds in boot_seed_raw/boot_seed_centered (=42+offset).
+# *_outside_ci flags whether the point estimate falls outside its own 95% CI.
+# tau_exp_ratio_centered_over_raw = centered_tau_exp_h / raw_tau_exp_h.
+layer,n_layer_rows,n_pairs_lag1,dt_hours,raw_lag1_sim,centered_lag1_sim,static_share_lag1_sim,mean_norm_ratio_centered_over_raw,raw_tau_exp_h,raw_tau_exp_R2,raw_tau_exp_ci95_lo,raw_tau_exp_ci95_hi,raw_tau_exp_outside_ci,raw_tau_ar1_h,raw_tau_ar1_ci95_lo,raw_tau_ar1_ci95_hi,raw_tau_ar1_outside_ci,centered_tau_exp_h,centered_tau_exp_R2,centered_tau_exp_ci95_lo,centered_tau_exp_ci95_hi,centered_tau_exp_outside_ci,centered_tau_ar1_h,centered_tau_ar1_ci95_lo,centered_tau_ar1_ci95_hi,centered_tau_ar1_outside_ci,tau_exp_ratio_centered_over_raw,boot_seed_raw,boot_seed_centered
+surface,210,202,5.740457922777778,0.9564862371026195,0.3663944181739324,0.6169370724206011,0.2615729483001767,177.13269574396224,0.8764563164222832,16.79835698124193,13110.755067546452,False,129.03130062490877,119.82118607344299,146.03306674260858,False,57.37091432884792,0.9473660060548983,22.61777879894788,220.49424497831558,False,5.717331997840964,4.97744450638971,6.3559796912225925,False,0.32388664378356846,42,52
+mid,210,202,5.740457922777778,0.95695923628627,0.3611842705723368,0.6225708923882625,0.2628857706132225,165.79047972636636,0.9584811848291257,21.07407232470201,16323.50001473281,False,130.4813111477435,114.73248850930202,144.05118708540866,False,100.87473239146053,0.971292890544437,33.31611953781584,525.9185706812502,False,5.63692449626452,4.934243338630464,6.3012997166720375,False,0.6084470746327058,43,53
+residue,210,202,5.740457922777778,0.9575839707764523,0.3861223439620865,0.5967744284096557,0.2650780213790038,193.21721752335242,0.9504132717457283,14.769208518519573,11930.82163287356,False,132.44603288867916,124.59975421086087,148.4550223618721,False,64.52960952959782,0.9712344756693799,25.467444691786753,158.20909650699764,False,6.032421029157965,5.311049984917285,6.748180840073831,False,0.3339744271071428,44,54

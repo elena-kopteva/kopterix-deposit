@@ -1,0 +1,6 @@
+# Pre-registered test: modal ordering identified on APRIL rows only, tested on MAY rows only. Primary = one-sided exact binomial vs null 1/6. Secondary = chi-square GoF of full May distribution vs uniform. CAVEAT: consecutive runs are autocorrelated so effective N < row count; every-4th-run rows give a lower-dependence sensitivity check (~1 run/day).
+test,value,april_k,april_n,may_k,may_n,null_p0,stat,pvalue,detail
+April-modal-ordering,SR<MR<SM,25.0,104.0,11,106,0.16666666666666666,,0.9750156326093411,one-sided exact binomial (May modal occurrence > 1/6)
+May-chisquare-GoF-uniform,all-6-orderings,,,106,106,0.16666666666666666,16.49056603773585,0.00557450140269836,"chi-square GoF May distribution vs uniform 1/6, dof=5"
+April-modal-ordering (every-4th-run sens.),SR<MR<SM,6.0,26.0,2,27,0.16666666666666666,,0.9534106843982395,autocorrelation sensitivity: every 4th run (~1/day); SAME pre-registered ordering
+May-chisquare-GoF (every-4th-run sens.),all-6-orderings,,,27,27,0.16666666666666666,9.666666666666666,0.08525020077588863,"chi-square GoF May (every 4th run) vs uniform, dof=5"

@@ -1,0 +1,4 @@
+# CAVEAT: UnigramCounts stores only the TOP-200 tokens per snapshot (__total__ key excluded from all entropy computations). H_rare is the rarefied entropy of this TRUNCATED top-200 distribution, not the full lexical distribution. Instrument diagnostic, not a platform-level claim.
+# Sensitivity of H_rare (budget B=703, all 214 valid rows) to the 6 n_total_regime rows (n_total<=300, all May, flagged not excluded from the primary analysis). pct_of_std = |mean_excl - mean_all| / std_all * 100.
+metric,n_all,mean_all,median_all,std_all,n_excl_regime,mean_excl,median_excl,std_excl,mean_diff_excl_minus_all,pct_of_std,n_regime_rows
+H_rare (B=703),214,6.215085191942053,6.238657791250658,0.1164648305533511,208,6.211279005021686,6.236732151743569,0.1076756715509339,-0.0038061869203662724,3.2680998223087654,6

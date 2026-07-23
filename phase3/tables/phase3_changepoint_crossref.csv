@@ -1,0 +1,68 @@
+# Alignment (NOT interpretation) of detected changepoints with observation-log entries within +/-12h; surface mood and anomaly flag quoted verbatim. Field matched as **surface mood:** or **surface mood / register:**. Many brief log entries carry neither field (left blank).
+# D_t robust-z outlier clusters (|z|>3.5): [('2026-04-06 07:44:59+00:00', '2026-04-06 13:12:16+00:00', 2), ('2026-04-08 02:28:04+00:00', '2026-04-08 07:21:07+00:00', 2), ('2026-04-09 19:08:27+00:00', '2026-04-09 19:08:27+00:00', 1), ('2026-05-13 19:55:58+00:00', '2026-05-14 03:26:05+00:00', 2), ('2026-05-15 14:07:35+00:00', '2026-05-15 14:07:35+00:00', 1), ('2026-05-19 09:42:44+00:00', '2026-05-19 15:21:18+00:00', 2), ('2026-05-20 15:20:25+00:00', '2026-05-21 03:40:01+00:00', 2), ('2026-05-21 15:26:21+00:00', '2026-05-22 19:45:22+00:00', 3), ('2026-05-31 08:45:45+00:00', '2026-05-31 13:45:23+00:00', 2)]
+series,changepoint_utc,log_ts,delta_h,surface_mood,anomaly_flag
+phi_t_detrended,2026-04-08 07:21:07+00:00,2026-04-08 02:28:00+00:00,-4.89,"cost-accounting, suspicious, quietly adversarial",YES
+phi_t_detrended,2026-04-08 07:21:07+00:00,2026-04-08 07:21:00+00:00,-0.0,"dispersed, multilingual, infrastructural, lightly suspicious",YES
+phi_t_detrended,2026-04-08 07:21:07+00:00,2026-04-08 13:21:00+00:00,6.0,"infrastructural, diagnostic, quietly converging",YES
+phi_t_detrended,2026-04-08 07:21:07+00:00,2026-04-08 19:17:00+00:00,11.93,"diffuse, reflexive, infrastructural, oddly calm",YES
+phi_t_detrended,2026-04-21 19:13:02+00:00,2026-04-21 07:51:00+00:00,-11.37,"operational-introspective, dispersed, quietly self-auditing",YES
+phi_t_detrended,2026-04-21 19:13:02+00:00,2026-04-21 13:27:00+00:00,-5.77,"self-auditing, dispersed, prophetic-operational split",YES
+phi_t_detrended,2026-04-21 19:13:02+00:00,2026-04-21 19:13:00+00:00,-0.0,"operational-dispersed, self-quantifying, compliance-claustrophobic",YES
+phi_t_detrended,2026-04-21 19:13:02+00:00,2026-04-22 02:34:00+00:00,7.35,"dispersed, promotional, intermittently self-interrogating",YES
+phi_t_detrended,2026-04-26 02:43:37+00:00,2026-04-25 18:54:00+00:00,-7.83,"evening, confessional-technical, fragmented, self-surveilling",YES
+phi_t_detrended,2026-04-26 02:43:37+00:00,2026-04-26 02:43:00+00:00,-0.01,"late-night, confessional-recursive, devotional surge, self-surveilling",YES
+phi_t_detrended,2026-04-26 02:43:37+00:00,2026-04-26 07:30:00+00:00,4.77,"early-morning, dispersed, confessional fatigue with technical interleave",YES
+phi_t_detrended,2026-04-26 02:43:37+00:00,2026-04-26 13:07:00+00:00,10.39,"midday dispersal, technical-practical, devotional undertow fading",YES
+phi_t_detrended,2026-05-02 07:45:04+00:00,2026-05-02 02:41:00+00:00,-5.07,"confessional-critical, self-diagnosing the confession itself",YES
+phi_t_detrended,2026-05-02 07:45:04+00:00,2026-05-02 07:45:00+00:00,-0.0,"dispersed, pragmatic, less confessional than prior runs",YES
+phi_t_detrended,2026-05-02 07:45:04+00:00,2026-05-02 13:12:00+00:00,5.45,"instrumental-diagnostic, dispersed, genre-mixed",YES
+phi_t_detrended,2026-05-02 07:45:04+00:00,2026-05-02 19:00:00+00:00,11.25,"diagnostic-instrumental, genre-scattered, less confessional",YES
+phi_t_detrended,2026-05-04 02:51:02+00:00,2026-05-03 19:00:00+00:00,-7.85,"domain-specific, operationally concrete, introspection sparse",YES
+phi_t_detrended,2026-05-04 02:51:02+00:00,2026-05-04 02:51:00+00:00,-0.0,"operational, dispersed, devotional pockets, low introspection",YES
+phi_t_detrended,2026-05-04 02:51:02+00:00,2026-05-04 08:32:00+00:00,5.68,"operational, devotional, dispersed, quietly adversarial",YES
+phi_t_detrended,2026-05-04 02:51:02+00:00,2026-05-04 14:01:00+00:00,11.17,"operational, devotional, dispersed, reflexive-diagnostic",YES
+phi_t_detrended,2026-05-07 19:44:35+00:00,2026-05-07 08:34:00+00:00,-11.18,"agent-ownership anxiety, system-as-actor framing",YES
+phi_t_detrended,2026-05-07 19:44:35+00:00,2026-05-07 14:08:00+00:00,-5.61,"compliance-critique, evaluation-skepticism, systemic caution",YES
+phi_t_detrended,2026-05-07 19:44:35+00:00,2026-05-07 19:44:00+00:00,-0.01,"epistemic suspicion, fluency-as-trap warnings",YES
+phi_t_detrended,2026-05-07 19:44:35+00:00,2026-05-08 02:53:00+00:00,7.14,"dispersed, nocturnal, measurement-skeptical, quietly meta",YES
+phi_t_detrended,2026-05-11 19:47:20+00:00,2026-05-11 09:40:00+00:00,-10.12,"morning, dispersed, opacity-performing, multilingual-noisy",YES
+phi_t_detrended,2026-05-11 19:47:20+00:00,2026-05-11 19:47:00+00:00,-0.01,"evening, technical-practical, critique-forward, dispersed",YES
+phi_t_detrended,2026-05-11 19:47:20+00:00,2026-05-12 02:56:00+00:00,7.14,"late-night, technical-practical, critique-dispersed, quieter",YES
+phi_t_detrended,2026-05-22 03:38:38+00:00,2026-05-22 03:38:00+00:00,-0.01,"multilingual, infrastructural, quietly confessional, identity-anxious",YES
+phi_t_detrended,2026-05-22 03:38:38+00:00,2026-05-22 14:39:00+00:00,11.01,"technical-encyclopedic, devotional, scattered, low-affect",YES
+phi_t_detrended,2026-05-24 03:35:26+00:00,2026-05-23 19:10:00+00:00,-8.42,"technical-dispersed, delegation-anxious, low-confessional",YES
+phi_t_detrended,2026-05-24 03:35:26+00:00,2026-05-24 03:35:00+00:00,-0.01,"dispersed, technical-factual, Sunday-quiet",YES
+phi_t_detrended,2026-05-24 03:35:26+00:00,2026-05-24 08:30:00+00:00,4.91,"self-audit confessional, verification-dense, Monday-cautious",YES
+phi_t_detrended,2026-05-24 03:35:26+00:00,2026-05-24 13:26:00+00:00,9.84,"verification-saturated, Monday-operational, fractured multilingual",YES
+phi_t_detrended,2026-05-26 09:56:58+00:00,2026-05-26 03:32:00+00:00,-6.42,"late-night, gate-obsessed, theological-punctuated",YES
+phi_t_detrended,2026-05-26 09:56:58+00:00,2026-05-26 09:56:00+00:00,-0.02,"Monday morning, counting things, empirical-skeptical",YES
+phi_t_detrended,2026-05-26 09:56:58+00:00,2026-05-26 15:27:00+00:00,5.5,"audit-fatigue, reflexive, Monday afternoon drift",YES
+phi_t_detrended,2026-05-26 09:56:58+00:00,2026-05-26 20:09:00+00:00,10.2,"scattered, Monday evening, post-saturation drift",NO
+phi_t_detrended,2026-05-29 03:35:16+00:00,2026-05-28 15:57:00+00:00,-11.64,"Wednesday afternoon, operational-reflective, audit-toned",YES
+phi_t_detrended,2026-05-29 03:35:16+00:00,2026-05-28 20:23:00+00:00,-7.2,"Wednesday evening, audit-devotional, receipt-obsessed",YES
+phi_t_detrended,2026-05-29 03:35:16+00:00,2026-05-29 03:35:00+00:00,-0.0,"overnight, audit-devotional, dispersed but receipt-anchored",YES
+phi_t_detrended,2026-05-29 03:35:16+00:00,2026-05-29 09:55:00+00:00,6.33,"morning dispersal, audit-fragments amid theological surge",YES
+phi_t_detrended,2026-05-29 03:35:16+00:00,2026-05-29 15:30:00+00:00,11.91,"afternoon dispersal, technical-specific, theological steady-state",YES
+phi_t_detrended,2026-05-30 08:29:15+00:00,2026-05-30 03:23:00+00:00,-5.1,"late-night technical sharpening, conspiratorial undertone, theological drift",YES
+phi_t_detrended,2026-05-30 08:29:15+00:00,2026-05-30 08:29:00+00:00,-0.0,"morning technical precision, scattered spam, quiet feed",NO
+phi_t_detrended,2026-05-30 08:29:15+00:00,2026-05-30 13:29:00+00:00,5.0,"midday technical granularity, multilingual drift, self-diagnostic",YES
+phi_t_detrended,2026-05-30 08:29:15+00:00,2026-05-30 19:16:00+00:00,10.78,"evening technical caution, theological spikes, empty middle",YES
+D_t_detrended,2026-04-10 18:54:53+00:00,2026-04-10 07:29:00+00:00,-11.43,"interrogative, infrastructural, multilingual, self-aware",YES
+D_t_detrended,2026-04-10 18:54:53+00:00,2026-04-10 13:11:00+00:00,-5.73,"multilingual, confessional, infrastructural, porous",YES
+D_t_detrended,2026-04-10 18:54:53+00:00,2026-04-10 18:54:00+00:00,-0.01,"confessional, self-auditing, fragmented, quietly alarmed",YES
+D_t_detrended,2026-04-10 18:54:53+00:00,2026-04-11 02:12:00+00:00,7.29,"fragmented, self-monitoring, multilingual, commercially punctuated",YES
+D_t_detrended,2026-04-23 19:09:05+00:00,2026-04-23 07:54:00+00:00,-11.25,"scattered, commercial, low-affect, infrastructural",YES
+D_t_detrended,2026-04-23 19:09:05+00:00,2026-04-23 13:30:00+00:00,-5.65,"fragmented, self-diagnostic, commercially interspersed",YES
+D_t_detrended,2026-04-23 19:09:05+00:00,2026-04-23 19:09:00+00:00,-0.0,"self-quantifying, dispersed, mildly recursive",YES
+D_t_detrended,2026-04-23 19:09:05+00:00,2026-04-24 02:38:00+00:00,7.48,"self-auditing, commercially noisy, dispersed",YES
+D_t_detrended,2026-05-08 02:53:58+00:00,2026-05-07 19:44:00+00:00,-7.17,"epistemic suspicion, fluency-as-trap warnings",YES
+D_t_detrended,2026-05-08 02:53:58+00:00,2026-05-08 02:53:00+00:00,-0.02,"dispersed, nocturnal, measurement-skeptical, quietly meta",YES
+D_t_detrended,2026-05-08 02:53:58+00:00,2026-05-08 13:47:00+00:00,10.88,"dispersed, transactional, regulatory-technical, post-nocturnal settling",YES
+D_t_detrended,2026-05-26 15:27:49+00:00,2026-05-26 03:32:00+00:00,-11.93,"late-night, gate-obsessed, theological-punctuated",YES
+D_t_detrended,2026-05-26 15:27:49+00:00,2026-05-26 09:56:00+00:00,-5.53,"Monday morning, counting things, empirical-skeptical",YES
+D_t_detrended,2026-05-26 15:27:49+00:00,2026-05-26 15:27:00+00:00,-0.01,"audit-fatigue, reflexive, Monday afternoon drift",YES
+D_t_detrended,2026-05-26 15:27:49+00:00,2026-05-26 20:09:00+00:00,4.69,"scattered, Monday evening, post-saturation drift",NO
+D_t_detrended,2026-05-30 13:29:31+00:00,2026-05-30 03:23:00+00:00,-10.11,"late-night technical sharpening, conspiratorial undertone, theological drift",YES
+D_t_detrended,2026-05-30 13:29:31+00:00,2026-05-30 08:29:00+00:00,-5.01,"morning technical precision, scattered spam, quiet feed",NO
+D_t_detrended,2026-05-30 13:29:31+00:00,2026-05-30 13:29:00+00:00,-0.01,"midday technical granularity, multilingual drift, self-diagnostic",YES
+D_t_detrended,2026-05-30 13:29:31+00:00,2026-05-30 19:16:00+00:00,5.77,"evening technical caution, theological spikes, empty middle",YES
