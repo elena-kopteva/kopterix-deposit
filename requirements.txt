@@ -1,0 +1,10 @@
+# Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]
+# Historical Phase 2 run used scipy==1.15.3; see phase2_status.json.
+matplotlib==3.8.4
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+seaborn==0.13.2
+# ruptures installed 2026-07-18 for reproduction; historical changepoint
+# runs used an unrecorded ruptures version.
+ruptures==1.1.10

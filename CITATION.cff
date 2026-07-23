@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this deposit, please cite it as below."
+type: dataset
+title: "Kopterix: A Low-Footprint Instrument for Observing Agent-Native Populations, with a Two-Month Validation on Moltbook"
+authors:
+  - family-names: "Kopteva"
+    given-names: "Elena"
+    orcid: "https://orcid.org/0000-0001-8364-0481"
+date-released: 2026-07-23
+version: "1.0"
+license: CC-BY-4.0
