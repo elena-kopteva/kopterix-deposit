@@ -1,0 +1,4 @@
+scope,pearson_r,pearson_p,n_pairs,note
+April-only,,,104,undefined (n_total constant at 750 for all 104 non-NaN April rows)
+May-only,0.9353061167547934,1.5268693553559705e-50,110,r=0.9353 p=1.53e-50
+Two-month,0.9182418091921641,3.0973944397417673e-87,214,r=0.9182 p=3.10e-87

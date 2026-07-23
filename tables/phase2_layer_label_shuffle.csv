@@ -1,0 +1,7 @@
+permutation,label,is_identity,within_label_norm_mean,rank_ascending,metric_insensitive_note
+"(0, 2, 1)",surface->residue->mid,False,0.08725529180272984,3.5,Permutation-invariant by construction
+"(2, 0, 1)",residue->surface->mid,False,0.08725529180272984,3.5,Permutation-invariant by construction
+"(1, 0, 2)",mid->surface->residue,False,0.08725529180272984,3.5,Permutation-invariant by construction
+"(0, 1, 2)",surface->mid->residue,True,0.08725529180272984,3.5,Permutation-invariant by construction
+"(1, 2, 0)",mid->residue->surface,False,0.08725529180272984,3.5,Permutation-invariant by construction
+"(2, 1, 0)",residue->mid->surface,False,0.08725529180272984,3.5,Permutation-invariant by construction

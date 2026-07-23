@@ -1,0 +1,10 @@
+Check,Value,Status,Note
+Observation rows,231,Pass,Rows in the validation window
+Mean observations per day,3.79,Pass,Mean across all 61 days
+State rows,215,Pass,Rows in the validation window
+Deterministic shuffle blocks,13,Pass,Blocks with comparison data
+Days without runs,0,Pass,At least one run on every day
+Low count observations,6,Pass,May observations with n_total<=300; checked separately
+SciPy version,1.15.3,Pass,Statistical routines available
+Embedding dimension,384,Pass,Expected vector dimension
+Complete LayerCentroids rows,210/215,Limit,Five May rows incomplete; four are in the low count regime

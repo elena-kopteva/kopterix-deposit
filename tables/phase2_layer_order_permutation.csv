@@ -1,0 +1,6 @@
+statistic,theoretical_null,observed,null_exact_mean,null_exact_std,two_sided_tail_p,n_perms_null,n_used,note
+P(d_surface_mid < d_mid_residue),0.5,0.609524,0.5,0.080906,0.3333,6,210,exact 6-perm null (includes identity); min achievable p=1/6=0.1667
+P(d_surface_residue is largest),0.333,0.309524,0.333333,0.051434,1.0000,6,210,exact 6-perm null (includes identity); min achievable p=1/6=0.1667
+P(d_sm < d_mr < d_sr),0.167,0.204762,0.166667,0.045675,0.6667,6,210,exact 6-perm null (includes identity); min achievable p=1/6=0.1667
+mean ratio d_surface_mid / d_mid_residue,computed,0.957999,1.060735,0.074546,N/A,6,210,exact 6-perm null (includes identity); ratio null mean != 1.0
+mean ratio d_surface_residue / d_surface_mid,computed,1.075675,1.060735,0.074546,N/A,6,210,exact 6-perm null (includes identity); ratio null mean != 1.0

@@ -1,0 +1,6 @@
+state_ts,issue,missing_keys,nearest_obs_n_total,n_total_regime,obs_delta_sec
+2026-05-13 19:55,incomplete_keys,"['mid', 'residue']",50.0,True,0.56818
+2026-05-19 09:42,incomplete_keys,"['surface', 'mid']",50.0,True,0.112805
+2026-05-20 15:20,incomplete_keys,"['surface', 'residue']",25.0,True,0.726144
+2026-05-21 15:26,incomplete_keys,"['mid', 'residue']",25.0,True,0.559058
+2026-05-30 19:16,incomplete_keys,['mid'],500.0,False,0.786637

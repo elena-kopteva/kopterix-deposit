@@ -1,0 +1,5 @@
+Source,Count,Used in analysis
+April baseline shuffle entries with centroid distance comparisons,8,Yes
+May baseline shuffle entries with centroid distance comparisons,5,Yes
+Quarantined log metric rows,218,No
+April H_t=4.2 anomaly,1,"No, first run logging provenance artifact"

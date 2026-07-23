@@ -1,0 +1,14 @@
+Timestamp,post_rate_est,H_t,phi_t,D_t,n_total,centroid_dist_surface_mid,centroid_dist_mid_residue,centroid_dist_surface_residue,is_shuffle,source_log,month,metric_provenance,H_t_init_outlier,H_t_numeric,n_total_regime
+2026-04-05 18:35:00,,,,,,0.0305,0.023787,0.025674,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-05 19:55:00,,,,,,0.029434,0.025239,0.026395,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-05 21:24:00,,,,,,0.028743,0.024749,0.025341,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-05 22:15:00,,,,,,0.020891,0.026085,0.025601,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-05 23:39:00,,,,,,0.019637,0.022621,0.023475,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-12 02:35:00,,,,,,0.039918,0.031602,0.036669,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-19 02:40:00,,,,,,0.027122,0.02977,0.035596,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-04-26 02:43:00,,,,,,0.032161,0.032834,0.037462,True,kopterix_log_2026-04.md,2026-04,deterministic_shuffle_comparison,False,,False
+2026-05-03 02:55:00,,,,,,0.038591,0.035116,0.026277,True,kopterix_log_2026-05.md,2026-05,deterministic_shuffle_comparison,False,,False
+2026-05-10 02:55:00,,,,,,0.028852,0.030145,0.025999,True,kopterix_log_2026-05.md,2026-05,deterministic_shuffle_comparison,False,,False
+2026-05-17 03:25:00,,,,,,0.037983,0.039331,0.036693,True,kopterix_log_2026-05.md,2026-05,deterministic_shuffle_comparison,False,,False
+2026-05-24 03:35:00,,,,,,0.046661,0.038992,0.034805,True,kopterix_log_2026-05.md,2026-05,deterministic_shuffle_comparison,False,,False
+2026-05-31 03:50:00,,,,,,0.036833,0.036092,0.036242,True,kopterix_log_2026-05.md,2026-05,deterministic_shuffle_comparison,False,,False

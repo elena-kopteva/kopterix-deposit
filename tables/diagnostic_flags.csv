@@ -1,0 +1,9 @@
+metric,low_variance_flag,high_variance_flag,ceiling_floor_concentration,exact_zero_count,impossible_neg_count,phi_out_of_01,robust_z_outlier_count,n_total_lt50_count,pearson_r_with_n_total,depends_on_n_total,pearson_r_with_post_rate_est,depends_on_post_rate_est
+post_rate_est,False,False,0.004366812227074236,0,0,0,15,0,0.24655007624165218,False,1.0,True
+H_t,False,False,0.004672897196261682,0,0,0,8,0,0.9182418091921639,True,0.24444136402688182,False
+phi_t,False,False,0.004672897196261682,0,0,0,1,0,0.11069385930252244,False,0.09364840564225625,False
+D_t,False,False,0.0047169811320754715,0,0,0,17,0,-0.6999865799324878,True,-0.22862682697150447,False
+n_total,False,False,0.9392523364485982,0,0,0,0,2,1.0,True,0.24655007624165218,False
+centroid_dist_surface_mid,False,False,0.004784688995215311,0,0,0,18,0,-0.7858907214603562,True,-0.011460577149111166,False
+centroid_dist_mid_residue,False,False,0.004784688995215311,0,0,0,16,0,-0.7813264560132965,True,0.006636705634304807,False
+centroid_dist_surface_residue,False,False,0.004761904761904762,0,0,0,7,0,-0.7464058800560275,True,-0.11753539280113502,False

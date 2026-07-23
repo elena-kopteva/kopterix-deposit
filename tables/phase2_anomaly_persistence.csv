@@ -1,0 +1,8 @@
+metric,total_flagged,n_runs,max_run_length,mean_run_length,n_isolated_spikes,n_persistent_runs,max_gap_secs_any_run,robust_z_thresh,framing
+post_rate_est,15,13,2,1.1538,11,2,19256.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
+H_t,8,6,3,1.3333,5,1,20314.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
+phi_t,1,1,1,1.0,1,0,0.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
+D_t,17,10,2,1.7,3,7,44376.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
+centroid_dist_surface_mid,18,16,2,1.125,14,2,26731.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
+centroid_dist_mid_residue,16,14,2,1.1429,12,2,19742.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
+centroid_dist_surface_residue,7,6,2,1.1667,5,1,19742.0,3.5,"distinguishes persistent currents (run>=2) from isolated spikes (run=1); purely descriptive, no significance claim"
