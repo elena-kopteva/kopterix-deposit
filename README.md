@@ -12,7 +12,7 @@ Everything in this section is repository metadata added for
 convenience. It is not part of the deposit and does not appear in the
 archived files.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21514979.svg)](https://doi.org/10.5281/zenodo.21514979)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21514979-blue)](https://doi.org/10.5281/zenodo.21514979)
 
 Publication of record: Zenodo, DOI 10.5281/zenodo.21514979 (version
 1.0.0, published 2026-07-23). That record, not this repository, is the
