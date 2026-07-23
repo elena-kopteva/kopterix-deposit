@@ -1,0 +1,201 @@
+{
+  "phase": 1,
+  "window_start": "2026-04-01 00:00:00",
+  "window_end": "2026-06-01 00:00:00",
+  "row_count_real": 231,
+  "real_date_range_min": "2026-04-01 02:38:50",
+  "real_date_range_max": "2026-05-31 19:18:15",
+  "gap_stats": {
+    "median_gap_hours": 5.745555555555556,
+    "max_gap_hours": 23.641944444444444,
+    "large_gap_count_3x_median": 1,
+    "days_with_zero_runs": 0
+  },
+  "shuffle_parsing_success": true,
+  "shuffle_parse_status": {
+    "logs_present": [
+      "2026-04",
+      "2026-05"
+    ],
+    "logs_absent": [],
+    "parse_failure": false,
+    "blocks_found_per_log": {
+      "kopterix_log_2026-04.md": 9,
+      "kopterix_log_2026-05.md": 5
+    },
+    "shuffle_blocks_per_month": {
+      "2026-04": 8,
+      "2026-05": 5
+    },
+    "quarantined_metric_lines": 218
+  },
+  "shuffle_n_blocks": 13,
+  "scipy_available": true,
+  "seaborn_available": true,
+  "metric_provenance_inventory": {
+    "computed_observation_csv": 231,
+    "deterministic_shuffle_comparison": 13,
+    "legacy_shuffle_log_text_untrusted": 218
+  },
+  "n_total_regime": {
+    "threshold": 300,
+    "total_flagged": 6,
+    "by_month": {
+      "2026-05": 6
+    },
+    "note": "n_total_regime rows are real low-n observations (n_total <= 300). They are signal, not excluded from H_t_numeric or any analysis."
+  },
+  "H_t_outlier_rule": {
+    "status": "suspended_for_real_observations",
+    "H_t_numeric": "equals H_t for all real observations (no exclusions)",
+    "H_t_init_outlier_col": "all False in real_clean.csv (schema continuity only)"
+  },
+  "instrument_anomalies": [
+    {
+      "metric": "H_t",
+      "value": 4.2,
+      "block_ts": "2026-04-05 18:35:00",
+      "source_log": "kopterix_log_2026-04.md",
+      "position": "pre_comparison_header",
+      "untrust_reason": "first_run_artifact",
+      "metric_provenance": "legacy_shuffle_log_text_untrusted",
+      "description": "H_t = 4.2 appears in the April first-run shuffle record (kopterix_log_2026-04.md, block 2026-04-05 18:35 UTC) as a pre-comparison header value. It is an instrument/logging-provenance anomaly from the April first-run shuffle record, not evidence that the feed itself had real entropy H_t = 4.2. Retained for transparency and instrument characterization. Excluded from shuffle baseline statistics and not used as an exclusion-rule anchor."
+    }
+  ],
+  "saved_tables": [
+    "tables/data_coverage.csv",
+    "tables/real_descriptive_stats.csv",
+    "tables/shuffle_baseline_stats.csv",
+    "tables/real_vs_shuffle.csv",
+    "tables/temporal_structure.csv",
+    "tables/pearson_correlation.csv",
+    "tables/spearman_correlation.csv",
+    "tables/diagnostic_flags.csv",
+    "tables/cross_month_distribution.csv",
+    "tables/cross_month_autocorr_persistence.csv",
+    "analysis_intermediate/quarantine_shuffle_metrics.csv"
+  ],
+  "saved_figures": [
+    "figures/timeseries_post_rate_est.png",
+    "figures/timeseries_H_t.png",
+    "figures/timeseries_phi_t.png",
+    "figures/timeseries_D_t.png",
+    "figures/timeseries_n_total.png",
+    "figures/timeseries_centroid_dist_surface_mid.png",
+    "figures/timeseries_centroid_dist_mid_residue.png",
+    "figures/timeseries_centroid_dist_surface_residue.png",
+    "figures/rolling_metrics_summary.png"
+  ],
+  "high_correlation_pairs": [
+    {
+      "metric_a": "H_t",
+      "metric_b": "D_t",
+      "pearson_r": -0.7198
+    },
+    {
+      "metric_a": "H_t",
+      "metric_b": "n_total",
+      "pearson_r": 0.9182
+    },
+    {
+      "metric_a": "H_t",
+      "metric_b": "centroid_dist_surface_mid",
+      "pearson_r": -0.621
+    },
+    {
+      "metric_a": "H_t",
+      "metric_b": "centroid_dist_mid_residue",
+      "pearson_r": -0.6002
+    },
+    {
+      "metric_a": "D_t",
+      "metric_b": "n_total",
+      "pearson_r": -0.7
+    },
+    {
+      "metric_a": "n_total",
+      "metric_b": "centroid_dist_surface_mid",
+      "pearson_r": -0.7859
+    },
+    {
+      "metric_a": "n_total",
+      "metric_b": "centroid_dist_mid_residue",
+      "pearson_r": -0.7813
+    },
+    {
+      "metric_a": "n_total",
+      "metric_b": "centroid_dist_surface_residue",
+      "pearson_r": -0.7464
+    },
+    {
+      "metric_a": "centroid_dist_surface_mid",
+      "metric_b": "centroid_dist_mid_residue",
+      "pearson_r": 0.8679
+    },
+    {
+      "metric_a": "centroid_dist_surface_mid",
+      "metric_b": "centroid_dist_surface_residue",
+      "pearson_r": 0.657
+    },
+    {
+      "metric_a": "centroid_dist_mid_residue",
+      "metric_b": "centroid_dist_surface_residue",
+      "pearson_r": 0.7264
+    }
+  ],
+  "power_caveat": "Low shuffle power: only 13 shuffle blocks with deterministic comparisons (per month - 2026-04: 8, 2026-05: 5). Centroid-distance real-vs-shuffle comparisons are descriptive only. H_t/phi_t/D_t have no trusted shuffle baseline (log-text values quarantined).",
+  "phase0_diagnostics": {
+    "obs_raw_timestamp_samples": [
+      "2026-03-23 03:58:46 UTC",
+      "2026-03-23 07:11:41 UTC",
+      "2026-03-23 13:09:13 UTC"
+    ],
+    "log_header_samples": {
+      "kopterix_log_2026-04.md": "# kopterix_log :: 2026-04",
+      "kopterix_log_2026-05.md": "# kopterix_log :: 2026-05"
+    },
+    "rows_in": 270,
+    "rows_after_filter": 231,
+    "dropped_before_window": 28,
+    "dropped_after_window": 11,
+    "dropped_unparseable": 0,
+    "surviving_min": "2026-04-01 02:38:50",
+    "surviving_max": "2026-05-31 19:18:15",
+    "rows_per_month": {
+      "2026-04": 121,
+      "2026-05": 110
+    },
+    "shuffle_phase0": {
+      "blocks_found_per_log": {
+        "kopterix_log_2026-04.md": 9,
+        "kopterix_log_2026-05.md": 5
+      },
+      "det_comp_rows_in_window": 39,
+      "shuffle_blocks_per_month": {
+        "2026-04": 8,
+        "2026-05": 5
+      },
+      "quarantined_metric_lines": 218,
+      "instrument_anomalies": 1
+    }
+  },
+  "cross_month_stability": {
+    "months_compared": [
+      "2026-04",
+      "2026-05"
+    ],
+    "skip_reason": null,
+    "distribution_rows": 8,
+    "autocorr_rows": 8,
+    "large_autocorr_diff_flags": [
+      "H_t"
+    ],
+    "large_d_flags": [
+      "phi_t",
+      "centroid_dist_surface_residue"
+    ]
+  },
+  "warnings": [
+    "Expected 'observations_April-May_2026.csv' not found; falling back to 'observations.csv'. Verify this is the correct file."
+  ]
+}
